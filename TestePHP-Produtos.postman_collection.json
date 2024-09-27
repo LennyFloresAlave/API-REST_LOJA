@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "1fe4b59a-46ba-49ac-b333-8d81f747486b",
+		"name": "TestePHP-Produtos",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12223727",
+		"_collection_link": "https://crimson-water-481895.postman.co/workspace/My-Workspace~7dca4bc7-d9d1-4b0a-8f49-584651393e2d/collection/12223727-1fe4b59a-46ba-49ac-b333-8d81f747486b?action=share&source=collection_link&creator=12223727"
+	},
+	"item": [
+		{
+			"name": "requestGET",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/Loja-produtos/controller/produto.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Loja-produtos",
+						"controller",
+						"produto.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "requestPOST",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n    \"nome\": \"nome do produto\",\r\n    \"descricao\": \"descricao do produto\",\r\n    \"qtd\": 2223,\r\n  \"marca\": \"marca do produto\",\r\n  \"preco\": 234,\r\n  \"validade\": \"1990-09-09\" \r\n  }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/Loja-produtos/controller/produto.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Loja-produtos",
+						"controller",
+						"produto.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "requestPUT",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"id\": 3,\r\n        \"nome\": \"nome produto\",\r\n  \"descricao\": \"descricao produto\",\r\n  \"qtd\": 24253,\r\n  \"marca\": \"marca produto\",\r\n  \"preco\": 1144,\r\n   \"validade\": \"2024-09-02\"\r\n }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/Loja-produtos/controller/produto.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Loja-produtos",
+						"controller",
+						"produto.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "requestPATCH",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+                   "mode": "raw",
+				   "raw": " {\r\n    \"tabela\": \"Produtos\",\r\n    \"id\": 1,\r\n    \"preco\": 222 \r\n}",
+				   "options":{
+					    "raw":{
+							"language": "json"
+						}
+				   }
+				},
+				"url":{
+					"raw": "http://localhost/Loja-produtos/controller/produto.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Loja-produtos",
+						"controller",
+						"produto.php"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "requestDELETE",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\" : 7\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/Loja-produtos/controller/produto.php",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"Loja-produtos",
+						"controller",
+						"produto.php"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
